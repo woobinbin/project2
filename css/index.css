@@ -11,3 +11,8 @@
 .banner img{
     width: 100%;
 }
+
+.content-menu-list{
+    display: flex;
+    justify-content: space-between;
+}

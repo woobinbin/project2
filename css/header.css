@@ -6,6 +6,19 @@
     margin-bottom: 20px;
 }
 
+.header-text{
+    width: 100%;
+    text-align: center;
+    background-color: #012758;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.header-text span{
+    font-weight: bold;
+}
+
 .logo{
     margin-top: 40px;
 }
