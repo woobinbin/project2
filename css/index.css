@@ -1,0 +1,15 @@
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner{
+    width: 100%;
+    position: absolute;
+    left: 100px;
+}
+
+.banner img{
+    width: 1000px;
+}
