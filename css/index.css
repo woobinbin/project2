@@ -6,10 +6,8 @@
 
 .banner{
     width: 100%;
-    position: absolute;
-    left: 100px;
 }
 
 .banner img{
-    width: 1000px;
+    width: 100%;
 }
