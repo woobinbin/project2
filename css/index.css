@@ -16,3 +16,48 @@
     display: flex;
     justify-content: space-between;
 }
+
+.content-top{
+    margin-top: 100px;
+}
+
+.content-top>h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-top-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-top-list>li{
+    width: 30%;
+}
+
+.content-top-list>li img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.content-top-list>li p{
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+.content-top-price{
+    color: #666;
+    text-decoration: line-through;
+}
+
+.content-top-sale{
+    padding-right: 10px;
+    font-weight: bold;
+    color: #fb7b4d;
+}
+
+.content-top-sale-price{
+    font-weight: bold;
+}
