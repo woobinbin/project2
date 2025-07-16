@@ -2,6 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    display: flex;
 }
 
 
@@ -45,18 +46,18 @@
     
 }
 
-.content-top-price{
+.price{
     color: #666;
     text-decoration: line-through;
 }
 
-.content-top-sale{
+.sale{
     padding-right: 10px;
     font-weight: bold;
     color: #fb7b4d;
 }
 
-.content-top-sale-price{
+.sale-price{
     font-weight: bold;
 }
 
@@ -66,6 +67,61 @@
     text-align: center;
 }
 
-.time>h1{
+.time-title{
+    position: relative;
+}
+
+
+.time-title>h1{
     padding-top: 20px;
 }
+
+.time-more{
+    position: absolute;
+    right: 300px;
+    top: 60px;
+}
+
+
+
+.time-box{
+    display: flex;
+    width: 511.5px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.time-left{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.time-left img{
+    width: 100%;
+}
+
+.time-right{
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.time-bar{
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    border-radius: 2rem;
+    background: #000;
+    margin-bottom: 20px;
+    padding: 5px 0;
+}
+
+.time-right h2{
+  font-size: 16px;
+}
+
