@@ -37,6 +37,10 @@
     content: " | ";
 }
 
+.footer-center-copy{
+    margin-top: 20px;
+}
+
 .footer-right{
     margin-left: 200px;
 }
@@ -60,3 +64,4 @@
     background: #666;
     color: #fff;
 }
+
