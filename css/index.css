@@ -215,17 +215,43 @@
 }
 
 .best-items{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.best-item-title{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.best-item-title>h1{
+    padding-bottom: 20px;
+}
+
+
+
+.best-item-list{
+    margin-top: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.best-item-title{
-    text-align: center;
+.best-item-list li{
+    width: 23%;
 }
 
-.best-item{
-    width: 25%;
+.best-item-list li img{
+    width: 298px;
+    border-radius: 10px;
 }
+
+.best-item-list li>a>h2{
+    font-size: 16px;
+}
+
 
 .best-item-img{
     width: 298px;
