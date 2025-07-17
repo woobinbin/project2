@@ -298,8 +298,12 @@ padding-bottom: 20px;
 .start-more{
     position: absolute;
     right: 19%;
-    top: 80%;
+    top: 85%;
     color: #999;
+}
+
+.start-more p{
+    font-size: 15px;
 }
 
 .start-list{
