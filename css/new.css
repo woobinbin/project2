@@ -1,0 +1,63 @@
+
+
+.result-text{
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    flex-flow: row wrap;
+}
+
+.result-text p{
+    font-size: 15px;
+    color: #7d7d7d;
+}
+
+.result-text span{
+    color: #000;
+}
+
+.result-category{
+    position: absolute;
+    right: 0;
+    line-height: 40px;
+    max-width: 100%;
+    height: 40px;
+    padding: 0 30px 0 15px;
+    font-size: 13px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    background: #fff url(//img.echosting.cafe24.com/skin/skin/common/ico_select.png) no-repeat right 10px center;
+    background-size: 12px 7px;
+}
+
+.new-list{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.new-list li{
+    width: 22%;
+    margin-bottom: 40px;
+}
+
+.new-list li img{
+    width: 298px;
+    border-radius: 10px;
+}
+
+.new-list li>a>p{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.sale{
+    font-size: 18px;
+}
+
+.sale-price{
+    font-size: 18px;
+}
