@@ -9,6 +9,21 @@
     margin-top: 120px;
 }
 
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-logo{
+    width: 130px;
+    height: 130px;
+}
+
+.footer-logo img{
+    width: 100%;
+}
+
 .footer-center{
     margin-left: 250px;
 }

@@ -72,13 +72,16 @@
     right: 20px;
     top: 95px;
     display: flex;
+    
 }
 
 .header-icon>a{
     padding-left: 25px;
+    width: 32px;
+    height: 32px;
 }
 
 .header-icon img{
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    
 }
