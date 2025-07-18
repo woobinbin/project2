@@ -77,3 +77,8 @@
 .header-icon>a{
     padding-left: 25px;
 }
+
+.header-icon img{
+    width: 30px;
+    height: 30px;
+}
