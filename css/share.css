@@ -2,3 +2,18 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.price{
+    color: #666;
+    text-decoration: line-through;
+}
+
+.sale{
+    padding-right: 10px;
+    font-weight: bold;
+    color: #fb7b4d;
+}
+
+.sale-price{
+    font-weight: bold;
+}

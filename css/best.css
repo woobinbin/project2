@@ -1,0 +1,45 @@
+
+
+.result-text{
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    flex-flow: row wrap;
+}
+
+.result-category{
+    position: absolute;
+    right: 0;
+}
+
+.best-list{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.best-list li{
+    width: 22%;
+    margin-bottom: 40px;
+}
+
+.best-list li img{
+    width: 298px;
+    border-radius: 10px;
+}
+
+.best-list li>a>p{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.sale{
+    font-size: 18px;
+}
+
+.sale-price{
+    font-size: 18px;
+}
