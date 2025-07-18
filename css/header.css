@@ -19,14 +19,16 @@
 }
 
 .logo{
-    margin-top: 40px;
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+    margin-left: 0px;
 }
 
-.logo-img{
-    width: 100px;
-    height: 100px;
-    background-image: url("");
-    background-repeat: no-repeat;
+
+
+.logo img{
+    width: 100%;
 }
 
 .login{
@@ -47,6 +49,11 @@
     display: flex;
     margin-top: 95px;
     border-bottom: 1px solid silver;
+}
+
+.header-list li img{
+    width: 24px;
+    height: 24px;
 }
 
 .header-list{
