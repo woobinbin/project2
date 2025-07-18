@@ -25,6 +25,23 @@
     margin-bottom: 30px;
 }
 
+.content-top>h1::before{
+    content: "";
+    width: 4rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    margin-bottom: 3px;
+    margin-top: -0.5rem;
+    margin-right: 0.5rem;
+    background-image: url(../images/sale-icon1.png);
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    background-position: 0 0;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
 .content-top-list{
     display: flex;
     justify-content: space-between;
