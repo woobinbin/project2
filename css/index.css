@@ -332,6 +332,20 @@ font-size: 28px;
 padding-bottom: 20px;
 }
 
+.start-title h1::before{
+    content: "";
+    background-size: 3.4rem;
+    width: 3.4rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    margin-right: 4px;
+    background-image: url(../images/start-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .start-title{
     width: 100%;
