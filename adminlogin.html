@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/adminlogin.css">
+    <script src="js/adminlogin.js" defer></script>
+    <title>관리자로그인</title>
+</head>
+<body>
+    <div class="admin-login-container">
+        <div class="admin-header">
+            <div class="security-badge">SECURE</div>
+            <div class="admin-title">관리자 시스템</div>
+            <div class="admin-subtitle">육식토끼 관리자 전용 로그인</div>
+        </div>
+        
+        <form class="admin-login-form" id="adminLoginForm">
+            <div class="security-warning">
+                ⚠️ 관리자 계정은 높은 보안 수준을 요구합니다. 공용 PC에서는 로그인하지 마세요.
+            </div>
+            
+            <div class="form-group">
+                <input type="text" class="form-input" id="adminId" placeholder="관리자 아이디" required>
+                <div class="input-icon">👤</div>
+                <div class="error-message" id="adminIdError">관리자 아이디를 입력해주세요.</div>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" class="form-input" id="adminPassword" placeholder="관리자 비밀번호" required>
+                <div class="input-icon">🔒</div>
+                <div class="password-strength" id="passwordStrength">
+                    <div class="strength-bar"></div>
+                </div>
+                <div class="error-message" id="adminPasswordError">관리자 비밀번호를 입력해주세요.</div>
+            </div>
+            
+            <div class="security-options">
+                <label class="admin-remember">
+                    <input type="checkbox" id="adminRememberMe">
+                    이 기기에서 기억하기 (24시간)
+                </label>
+                <div class="security-info">
+                    🛡️ SSL 보안 연결
+                </div>
+            </div>
+            
+            <button type="submit" class="login-btn">관리자 로그인</button>
+            
+            <div class="login-attempts">
+                로그인 시도 횟수: <span id="attemptCount">0</span>/5
+            </div>
+        </form>
+        
+        <div class="admin-footer">
+            <a href="index.html" class="back-to-main" onclick="goToMainSite()">
+                ← 일반 쇼핑몰로 돌아가기
+            </a>
+        </div>
+    </div>
+</body>
+</html>
