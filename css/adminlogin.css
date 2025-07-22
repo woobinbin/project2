@@ -11,6 +11,7 @@ html, body {
             max-width: 450px;
             position: relative;
             border: 1px solid #e1e8ed;
+            margin: 0 auto;
         }
 
         .admin-header {
