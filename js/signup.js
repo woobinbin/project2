@@ -293,11 +293,49 @@
             document.getElementById('signupForm').addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                if (!document.getElementById('signupBtn').disabled) {
-                    alert('회원가입이 완료되었습니다!');
-                }
+               // 1. 성공 메시지 표시
+        alert('회원가입이 완료되었습니다!');
+        
+        // 2. 폼 초기화
+        this.reset();
+
+        // 3. 폼 상태 초기화
+        formState.email.valid = false;
+        formState.email.checked = false;
+        formState.password.valid = false;
+        formState.passwordConfirm.valid = false;
+        formState.name.valid = false;
+        formState.phone.valid = false;
+        formState.phone.verified = false;
+        formState.terms.valid = false;
+        
+        // 4. 모든 메시지 초기화
+        document.querySelectorAll('.validation-message').forEach(msg => {
+            msg.textContent = '';
+        });
+        
+        // 5. 인증번호 입력 필드 숨기기
+        const verificationGroup = document.getElementById('verificationGroup');
+        if (verificationGroup) {
+            verificationGroup.style.display = 'none';
+        }
+        
+        // 6. 체크박스 상태 초기화
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.checked = false;
+            checkbox.parentElement.classList.remove('checked');
+        });
+        
+        // 7. 로그인 화면으로 전환 (화면 전환 함수 호출)
+        setTimeout(() => {
+            goToLogin(); // 로그인 화면 표시 함수 호출
+        }, 1000); // 1초 후 전환
+
+            
             });
 
-            // 초기 유효성 검사
+        // 초기 유효성 검사
             validateForm();
+        
+        
         });
