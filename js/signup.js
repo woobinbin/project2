@@ -328,7 +328,7 @@
         
         // 7. 로그인 화면으로 전환 (화면 전환 함수 호출)
         setTimeout(() => {
-            goToLogin(); // 로그인 화면 표시 함수 호출
+            window.location.href = 'login.html'; // 로그인 화면 표시 함수 호출
         }, 1000); // 1초 후 전환
 
             
