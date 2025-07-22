@@ -4,49 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/share.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js" defer></script>
     <title>로그인</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-logo">
-            <div class="logo"><a href="#" class="logo-img"><img src="images/logo-icon.png" alt=""></a></div>
-            <div class="login">
-                <a href="login.html">
-                    <p>로그인</p>
-                </a>
-                <a href="signup.html">
-                    <p>회원가입</p>
-                </a>
-                <a href="#">
-                    <p>주문조회</p>
-                </a>
+    
+    <div class="login-container">
+        <div class="login-header">
+            <div class="company-name">육식토끼</div>
+            <div class="company-subtitle">신선한 닭고기 전문 쇼핑몰</div>
+        </div>
+        
+        <form class="login-form" id="loginForm">
+            <div class="form-group">
+                <input type="text" class="form-input" id="username" placeholder="아이디 또는 이메일" required>
+                <div class="error-message" id="usernameError">아이디를 입력해주세요.</div>
             </div>
-        </div>
-
-        <div class="header-menu">
-        <ul class="header-list">
-            <li><a href="#"><img src="images/menu-icon.png" alt=""></a></li>
-            <li><a href="#">Best</a></li>
-            <li><a href="#">육식데이</a></li>
-            <li><a href="#">6시특가</a></li>
-            <li><a href="#">100원딜</a></li>
-            <li><a href="#">공홈단독</a></li>
-            <li><a href="#">대량구매</a></li>
-            <li><a href="#">골라담기</a></li>
-            <li><a href="#">이벤트</a></li>
-            <li><a href="#">히스토리</a></li>
-        </ul>
-        <div class="header-icon">
-            <a href="#"><img src="images/search.png" alt=""></a>
-            <a href="#"><img src="images/user.png" alt=""></a>
-            <a href="#"><img src="images/coupon.png" alt=""></a>
-            <a href="#"><img src="images/basket.png" alt=""></a>
-        </div>
-        </div>
-    </header>
+            
+            <div class="form-group">
+                <input type="password" class="form-input" id="password" placeholder="비밀번호" required>
+                <div class="error-message" id="passwordError">비밀번호를 입력해주세요.</div>
+            </div>
+            
+            <div class="login-options">
+                <label class="remember-me">
+                    <input type="checkbox" id="rememberMe">
+                    로그인 상태 유지
+                </label>
+                <a href="#" class="forgot-password">비밀번호 찾기</a>
+            </div>
+            
+            <button type="submit" class="login-btn">로그인</button>
+            
+            <div class="divider">
+                <span>또는</span>
+            </div>
+            
+            <div class="social-login">
+                <button type="button" class="social-btn" onclick="socialLogin('kakao')">
+                    💬 카카오
+                </button>
+                <button type="button" class="social-btn" onclick="socialLogin('naver')">
+                    🟢 네이버
+                </button>
+            </div>
+            
+            <div class="signup-link">
+                아직 회원이 아니신가요? <a href="signup.html" onclick="goToSignup()">회원가입</a>
+            </div>
+        </form>
+    </div>
 
 
     <div class="wrapper">
