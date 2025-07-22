@@ -49,7 +49,7 @@
                 loginBtn.disabled = false;
                 
                 // 메인 페이지로 이동 (실제 구현 시)
-                // window.location.href = '/main';
+                 window.location.href = 'index.html';
             }, 1500);
         }
         
