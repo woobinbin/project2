@@ -6,10 +6,103 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/share.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <script src="js/signup.js" defer></script>
     <title>회원가입</title>
 </head>
 <body>
     
+
+    <div class="debug-info" id="debugInfo"></div>
+    
+    <div class="signup-container">
+        <div class="signup-header">
+            <h1>회원가입</h1>
+            <p>새로운 계정을 만들어보세요</p>
+        </div>
+
+        <form id="signupForm" novalidate>
+            <!-- 이메일 -->
+            <div class="form-group">
+                <label for="email">이메일 <span class="required">*</span></label>
+                <div class="input-wrapper">
+                    <input type="email" id="email" name="email" placeholder="이메일을 입력하세요">
+                    <button type="button" class="btn btn-secondary" id="emailCheckBtn">중복확인</button>
+                </div>
+                <div class="validation-message" id="emailMessage"></div>
+            </div>
+
+            <!-- 비밀번호 -->
+            <div class="form-group">
+                <label for="password">비밀번호 <span class="required">*</span></label>
+                <input type="password" id="password" name="password" placeholder="영문, 숫자, 특수문자 포함 8자 이상">
+                <div class="validation-message" id="passwordMessage"></div>
+            </div>
+
+            <!-- 비밀번호 확인 -->
+            <div class="form-group">
+                <label for="passwordConfirm">비밀번호 확인 <span class="required">*</span></label>
+                <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="비밀번호를 다시 입력하세요">
+                <div class="validation-message" id="passwordConfirmMessage"></div>
+            </div>
+
+            <!-- 이름 -->
+            <div class="form-group">
+                <label for="name">이름 <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+                <div class="validation-message" id="nameMessage"></div>
+            </div>
+
+            <!-- 휴대폰 -->
+            <div class="form-group">
+                <label for="phone">휴대폰번호 <span class="required">*</span></label>
+                <div class="input-wrapper">
+                    <input type="tel" id="phone" name="phone" placeholder="010-0000-0000">
+                    <button type="button" class="btn btn-secondary" id="phoneVerifyBtn">인증번호 발송</button>
+                </div>
+                <div class="validation-message" id="phoneMessage"></div>
+            </div>
+
+            <!-- 인증번호 입력 -->
+            <div class="form-group" id="verificationGroup" style="display: none;">
+                <label for="verificationCode">인증번호</label>
+                <div class="input-wrapper">
+                    <input type="text" id="verificationCode" name="verificationCode" placeholder="인증번호 6자리">
+                    <button type="button" class="btn btn-secondary" id="verifyCodeBtn">확인</button>
+                </div>
+                <div class="validation-message" id="verificationMessage"></div>
+            </div>
+
+            <!-- 약관 동의 -->
+            <div class="checkbox-group">
+                <div class="checkbox-item main">
+                    <input type="checkbox" id="allTerms">
+                    <label for="allTerms">전체 약관에 동의합니다</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="terms1" class="required-term">
+                    <label for="terms1">[필수] 이용약관에 동의합니다</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="terms2" class="required-term">
+                    <label for="terms2">[필수] 개인정보처리방침에 동의합니다</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="terms3">
+                    <label for="terms3">[선택] 마케팅 정보 수신에 동의합니다</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="signupBtn" disabled>회원가입</button>
+        </form>
+
+        <div class="login-link">
+            이미 계정이 있으신가요? <a href="login.html" onclick="goToLogin()">로그인</a>
+        </div>
+    </div>
+
+        
+    </div>
 
 
     <div class="wrapper">
