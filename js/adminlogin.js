@@ -112,7 +112,7 @@ let loginAttempts = 0;
         function goToMainSite() {
             if (confirm('일반 쇼핑몰 사이트로 이동하시겠습니까?')) {
                 alert('일반 쇼핑몰로 이동합니다.');
-                 window.location.href = '/index.html';
+                window.location.href = '/index.html';
             }
         }
         
