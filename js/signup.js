@@ -8,23 +8,6 @@
             terms: { valid: false }
         };
 
-        // 디버그 정보 표시
-        function updateDebugInfo() {
-            const debugInfo = document.getElementById('debugInfo');
-            if (debugInfo) {
-                debugInfo.innerHTML = `
-                    <div>이메일: ${formState.email.valid ? '✓' : '✗'} (중복확인: ${formState.email.checked ? '✓' : '✗'})</div>
-                    <div>비밀번호: ${formState.password.valid ? '✓' : '✗'}</div>
-                    <div>비밀번호 확인: ${formState.passwordConfirm.valid ? '✓' : '✗'}</div>
-                    <div>이름: ${formState.name.valid ? '✓' : '✗'}</div>
-                    <div>휴대폰: ${formState.phone.valid ? '✓' : '✗'} (인증: ${formState.phone.verified ? '✓' : '✗'})</div>
-                    <div>약관: ${formState.terms.valid ? '✓' : '✗'}</div>
-                `;
-                debugInfo.style.display = 'block';
-            }
-            console.log('Form State:', formState);
-        }
-
         // 이메일 유효성 검사
         function validateEmail(email) {
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
