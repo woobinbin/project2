@@ -63,8 +63,20 @@
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
 
+        #password{
+            width: 460px;
+        }
+
+        #passwordConfirm{
+            width: 460px;
+        }
+
+        #name{
+            width: 460px;
+        }
+
         .btn {
-            padding: 12px 20px;
+            padding: 12px 10px;
             border: none;
             border-radius: 8px;
             font-size: 14px;
