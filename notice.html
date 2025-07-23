@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <script src="js/notice.js" defer></script>
     <title>공지사항</title>
 </head>
 <body>
@@ -47,7 +49,57 @@
         </div>
     </header>
 
+     <div class="container">
+        <div class="notice-board">
+            <!-- 헤더 -->
+            <div class="header">
+                <div class="header-title">
+                    <div class="bell-icon">🔔</div>
+                    <h1>공지사항</h1>
+                </div>
+                
+                <div class="search-box">
+                    <div class="search-icon">🔍</div>
+                    <input type="text" id="searchInput" placeholder="공지사항을 검색하세요...">
+                </div>
+            </div>
 
+            <!-- 카테고리 필터 -->
+            <div class="category-filter">
+                <div class="category-buttons" id="categoryButtons">
+                    <button class="category-btn active" data-category="전체">전체</button>
+                    <button class="category-btn" data-category="공지사항">공지사항</button>
+                    <button class="category-btn" data-category="이벤트">이벤트</button>
+                    <button class="category-btn" data-category="시스템점검">시스템점검</button>
+                    <button class="category-btn" data-category="배송안내">배송안내</button>
+                </div>
+            </div>
+
+            <!-- 공지사항 목록 -->
+            <div class="notice-content" id="noticeContent">
+                <!-- 고정 공지 섹션 -->
+                <div id="pinnedSection" class="notice-section">
+                    <div class="section-title">
+                        <span class="pin-icon">📌</span>
+                        고정 공지
+                    </div>
+                    <div id="pinnedNotices"></div>
+                </div>
+
+                <!-- 일반 공지 섹션 -->
+                <div id="regularSection" class="notice-section">
+                    <div class="section-title" id="regularTitle" style="display: none;">일반 공지</div>
+                    <div id="regularNotices"></div>
+                </div>
+
+                <!-- 검색 결과 없음 -->
+                <div id="emptyState" class="empty-state" style="display: none;">
+                    <div class="bell-icon">🔔</div>
+                    <p>검색 결과가 없습니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

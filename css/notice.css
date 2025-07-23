@@ -1,0 +1,286 @@
+.container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .notice-board {
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        /* 헤더 */
+        .header {
+            padding: 32px;
+        }
+
+        .header-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .header-title h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #111827;
+            padding-right: 20px;
+        }
+
+        .bell-icon {
+            width: 28px;
+            height: 28px;
+            background: #3b82f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+        }
+
+        .search-box {
+            position: relative;
+            max-width: 400px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 16px 12px 44px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-box input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 10px;
+            top: 30%;
+            transform: translateY(-50%);
+            color: #9ca3af;
+            font-size: 16px;
+        }
+
+        /* 카테고리 필터 */
+        .category-filter {
+            padding: 24px 32px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .category-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .category-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 20px;
+            background: #f3f4f6;
+            color: #4b5563;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .category-btn:hover {
+            background: #e5e7eb;
+        }
+
+        .category-btn.active {
+            background: #3b82f6;
+            color: white;
+        }
+
+        /* 공지사항 목록 */
+        .notice-content {
+            padding: 32px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 16px;
+        }
+
+        .pin-icon {
+            color: #3b82f6;
+            font-size: 16px;
+        }
+
+        .notice-item {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: box-shadow 0.2s;
+        }
+
+        .notice-item.pinned {
+            border-color: #93c5fd;
+            background: #eff6ff;
+        }
+
+        .notice-item:hover {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .notice-header {
+            padding: 20px;
+            cursor: pointer;
+            background: white;
+            transition: background-color 0.2s;
+        }
+
+        .notice-item.pinned .notice-header {
+            background: #eff6ff;
+        }
+
+        .notice-header:hover {
+            background: #f9fafb;
+        }
+
+        .notice-item.pinned .notice-header:hover {
+            background: #dbeafe;
+        }
+
+        .notice-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .notice-left {
+            flex: 1;
+        }
+
+        .notice-badges {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .badge {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .badge.category {
+            background: #e5e7eb;
+            color: #374151;
+        }
+
+        .badge.category.공지사항 {
+            background: #dbeafe;
+            color: #1d4ed8;
+        }
+
+        .badge.category.이벤트 {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+
+        .badge.category.시스템점검 {
+            background: #fef3c7;
+            color: #d97706;
+        }
+
+        .badge.category.배송안내 {
+            background: #d1fae5;
+            color: #059669;
+        }
+
+        .badge.new {
+            background: #ef4444;
+            color: white;
+        }
+
+        .notice-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #111827;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .notice-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .chevron {
+            color: #9ca3af;
+            transition: transform 0.2s;
+            font-size: 18px;
+        }
+
+        .notice-item.expanded .chevron {
+            transform: rotate(90deg);
+        }
+
+        .notice-body {
+            padding: 0 20px 20px;
+            border-top: 1px solid #f3f4f6;
+            background: white;
+            display: none;
+        }
+
+        .notice-item.pinned .notice-body {
+            background: #eff6ff;
+        }
+
+        .notice-item.expanded .notice-body {
+            display: block;
+        }
+
+        .notice-content-text {
+            padding-top: 16px;
+            color: #374151;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 48px 20px;
+        }
+
+        .empty-state .bell-icon {
+            width: 48px;
+            height: 48px;
+            background: #e5e7eb;
+            color: #9ca3af;
+            margin: 0 auto 16px;
+            font-size: 24px;
+        }
+
+        .empty-state p {
+            color: #6b7280;
+            font-size: 16px;
+        }
