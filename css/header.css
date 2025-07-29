@@ -19,10 +19,48 @@
 }
 
 .logo{
+    font-size: 26px;
+    font-weight: bold;
+    width: 80px;
+    height: 50px;
     margin-top: 20px;
-    width: 70px;
-    height: 70px;
-    margin-left: 0px;
+    border-radius: 20px;
+    line-height: 50px;
+    text-align: center;
+     gap: 10px;
+}
+
+
+/* 왼쪽 u */
+.wave-left {
+  font-style: italic;
+  display: inline-block;
+  color: #012758;
+  position: absolute;
+  left: -3px;
+  top: 35px;
+  font-size: 42px;
+}
+
+/* 빨간 S */
+.center-s {
+  color: red;
+  font-size: 85px;
+  transform: rotate(-5deg) skewX(-5deg);
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+
+/* 오른쪽 n */
+.wave-right {
+  font-style: italic;
+  position: absolute;
+  display: inline-block;
+  color: #012758;
+   left: 50px;
+  top: 35px;
+  font-size: 42px;
 }
 
 
@@ -40,8 +78,9 @@
 }
 
 .login>a{
-    color: #666;
+    color: #333;
     padding-right: 10px;
+    font-weight: bold;
 }
 
 .header-menu{
@@ -49,7 +88,12 @@
     display: flex;
     margin-top: 95px;
     border-bottom: 1px solid silver;
+    justify-content: center;
+    margin-right: 170px;
+    
 }
+
+
 
 .header-list li img{
     width: 24px;
@@ -63,7 +107,7 @@
 
 .header-list>li{
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -74,6 +118,8 @@
     display: flex;
     
 }
+
+
 
 .header-icon>a{
     padding-left: 25px;
